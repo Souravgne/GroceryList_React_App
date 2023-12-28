@@ -1,11 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-function Item({fooditem}) {
+function Item({ fooditem }) {
+  
+ 
   return (
-    <div> <li key={fooditem} className="flex justify-between gap-x-6 py-5 " >{fooditem}</li>
-     
+    <div className='flex justify-between items-center space-x-10 '>
+      <li key={fooditem} className="flex py-5 " >{fooditem}</li>
+      <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded  "
+      >
+        Button
+      </button>
     </div>
-  )
+  );
 }
 
-export default Item
+export default Item;
